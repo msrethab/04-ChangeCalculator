@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Change Calculator</title>
+
+    <!-- Importing jquery -->
+
+    <script src="jquery-1.12.4.min.js"></script>
+
+    <!-- Initializing Bootstrap -->
+
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Linking external style sheets -->
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+	<!-- Include title Header -->
+	<h1>Change Calculator</h1>
+
+	<!-- Add Text input fields to get sale total, amount tendered and calculate button-->
+	<div class="container inputField">
+		<form>
+			<div class="form-group col-sm-6">
+			    <label for="amtSale">How much is due for this sale?</label>
+			    <input type="text" class="form-control" id="amtSale" placeholder="$0.00">
+			</div>
+			<div class="form-group col-sm-6">
+			    <label for="amtTender">How much was tendered?</label>
+			    <input type="text" class="form-control" id="amtTender" placeholder="$0.00">
+			</div>
+			<div class="form-group">
+		    	<div class="calcBtn">
+		      		<button type="button" class="btn btn-primary" id="button">Calculate</button>
+		    	</div>
+		  	</div>
+		</form>
+	</div>
+
+
+	<!-- Add Dollar field-->
+
+	<div class="container">
+		<h2>Dollars</h2>
+		<p class="numDollar">0</p>
+	</div>	
+
+	<!-- Add Change field separated into 4 categories Quarters dimes nickels and pennies-->
+
+	<div class="container" id="changeField">
+		<div class="form-group col-sm-3">
+			<h2>Quarters</h2>
+			<p class="numQuarter">0</p>
+		</div>
+		<div class="form-group col-sm-3">
+			<h2>Dimes</h2>
+			<p class="numDime">0</p>
+		</div>
+		<div class="form-group col-sm-3">
+			<h2>Nickels</h2>
+			<p class="numNickel">0</p>
+		</div>
+		<div class="form-group col-sm-3">
+			<h2>Pennies</h2>
+			<p class="numPenny">0</p>
+		</div>
+	</div>	
+
+
+	<!-- Create a copyright footer -->
+	
+	<footer class="centFooter">
+    	<p>&copy; 2016 Mark Srethabhakti.</p>
+	</footer>
+
+	<!-- Running external javaScript with jQuery elements -->
+
+	<script src="index.js"></script>
+
+</body>
+
+</html>
