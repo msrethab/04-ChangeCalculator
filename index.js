@@ -25,6 +25,8 @@ $(document).ready(function() {
                 var numNickel = Math.floor(remainChange / 0.05);
                 remainChange = remainChange % 0.05;
                 var numPenny = Math.floor(remainChange / 0.01);
+                remainChange = remainChange %.01;
+                numPenny = numPenny + Math.round(remainChange*100);
 
                 //Outputting the change to the document
 
