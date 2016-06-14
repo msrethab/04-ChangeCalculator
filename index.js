@@ -4,6 +4,7 @@ $(document).ready(function() {
     $('#button').on('click', function() {
 
             //Calling user inputs from document
+
             var amtSale = $("#amtSale").val();
             var amtTender = $("#amtTender").val();
 
@@ -17,19 +18,16 @@ $(document).ready(function() {
                 var totalChange = amtTender - amtSale;
                 var numDollar = Math.floor(totalChange);
                 var remainChange = totalChange - numDollar;
+                remainChange =remainChange * 100 //change is now in cents
 
-                var numQuarter = Math.floor(remainChange / 0.25);
-                remainChange = remainChange % 0.25;
-                var numDime = Math.floor(remainChange / 0.10);
-                remainChange = remainChange % 0.10;
-                var numNickel = Math.floor(remainChange / 0.05);
-                remainChange = remainChange % 0.05;
-                var numPenny = Math.floor(remainChange / 0.01);
-                remainChange = remainChange %.01;
-                numPenny = numPenny + Math.round(remainChange*100);
-
-                //Outputting the change to the document
-
+                var numQuarter = Math.floor(remainChange / 25);
+                remainChange = remainChange % 25;
+                var numDime = Math.floor(remainChange / 10);
+                remainChange = remainChange % 10;
+                var numNickel = Math.floor(remainChange / 5);
+                remainChange = remainChange % 5;
+                var numPenny = Math.round(remainChange);
+                
                 $('.numDollar').html(numDollar);
                 $('.numQuarter').html(numQuarter);
                 $('.numDime').html(numDime);
