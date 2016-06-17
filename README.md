@@ -32,3 +32,11 @@ Version 1.0.3
 -Changed the change calculator functionality to multiply by 100 to better keep track of values
 
 -Reformatted some comments
+
+
+
+Version 1.0.4
+
+-Formatted some comments
+
+-Code Reviewed by Jack Kuhry, and Sasan Bazadehkhoramshahi

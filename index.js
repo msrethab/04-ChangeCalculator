@@ -28,6 +28,9 @@ $(document).ready(function() {
                 remainChange = remainChange % 5;
                 var numPenny = Math.round(remainChange);
                 
+
+                //Outputting data to document
+
                 $('.numDollar').html(numDollar);
                 $('.numQuarter').html(numQuarter);
                 $('.numDime').html(numDime);
@@ -36,3 +39,5 @@ $(document).ready(function() {
             }
     })
 });
+
+//Reviewed by: SB JK MS
